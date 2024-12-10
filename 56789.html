@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        /* Container for content sections */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+        
+        /* Header styling */
+        header {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 30px 0;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(135deg, #444, #666);
+        }
+
+        /* Navigation bar styling */
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #555;
+        }
+
+        nav a:hover {
+            background-color: #444;
+        }
+
+        /* Section styling */
+        section {
+            margin: 20px 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 1.8em;
+            border-bottom: 3px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        section p {
+            margin: 10px 0;
+            text-align: justify;
+            color: #666;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: #fff;
+            font-size: 0.9em;
+            border-top: 5px solid #444;
+            margin-top: 30px;
+        }
+
+        /* Styling for the intro section */
+        .intro {
+            display: flex;
+            align-items: center;
+            margin: 20px 30px;
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .intro p {
+            text-align: justify;
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+
+        /* Section divider styling */
+        .section-divider {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(135deg, #333, #555);
+            margin: 20px 0;
+        }
+        
+        /* Hide sections initially */
+        .section {
+            display: none;
+        }
+
+        /* Make sections visible when selected */
+        .visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Digital Profolio</h1>
+        <p>Hi, I’m Lgie L. Doniña. This portfolio is a curated space showcasing my journey, achievements, and skills, blending my academic pursuits with personal growth.</p> Explore my projects, including works from my Computer 1 course, where I honed my abilities in design and technology. This portfolio reflects not just my academic path but also my vision for the future as I grow into a well-rounded professional.</p>
+        <p>Thank you for visiting, and I hope you enjoy exploring my work!</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('autobiography')">Autobiography</a>
+        <a href="javascript:void(0)" onclick="showSection('article')">Article</a>
+        <a href="javascript:void(0)" onclick="showSection('blog')">Blog</a>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container">
+        <!-- Autobiography Section -->
+        <section id="autobiography" class="section">
+            <h1>Lgie Lubrica Doniña</h1>
+            <div class="intro">
+              <img src="picture.jpg" alt="Lgie Doniña">
+              <p>Lgie Lubrica Doniña, born on March 4, 2005, in Ulag, Prieto-Diaz, Sorsogon, is a 19-year-old woman driven by ambition and personal growth. As the eldest of four children, she has developed perseverance and dedication, qualities that have guided her through life's challenges and aspirations.</p>
+            </div>
+
+            <section>
+              <h2>Family Background</h2>
+              <p>The eldest of four children, Lgie grew up in a close-knit family. Her father, Domingo Doniña Jr., is a hardworking fisherman whose efforts sustain the family, while her mother, Liezl Doniña, is a devoted homemaker who instilled in her children the value of discipline and compassion. As the eldest sibling, Lgie embraced her role as a guide and role model for her younger siblings, balancing responsibility with her natural curiosity and determination to succeed.</p>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section>
+              <h2>Education & Aspirations</h2>
+              <p>During her formative years, Lgie was a curious and eager learner. She excelled in her academics, graduating with high honors both in elementary school and senior high school. Her choice to pursue the Science, Technology, Engineering, and Mathematics (STEM) strand in high school reflected her love for problem-solving and her desire to challenge herself intellectually. STEM provided her with a strong foundation for analytical thinking and logical reasoning, skills that continue to serve her well in her current endeavors.</p>
+              <p>Now a second-year Bachelor of Science in Criminology student at Sorsogon College of Criminology, Lgie has found her true calling in the field of law enforcement. Her passion for justice and her commitment to creating a safer society motivated her to choose Criminology as her career path. She aspires to contribute to solving crimes and improving the criminal justice system, particularly in her local community. She consistently demonstrates leadership, diligence, and a thirst for knowledge, inspiring her peers.</p>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section>
+              <h2>Hobbies & Interests</h2>
+              <p>Outside the classroom, Lgie enjoys engaging in activities that broaden her horizons and nurture her creativity. Reading novels, particularly those with themes of romance and human behavior, has been a favorite pastime. Watching thought-provoking TV shows and movies also allows her to relax while expanding her understanding of different perspectives and cultures. These hobbies not only provide entertainment but also fuel her intellectual growth.</p>
+            </section>
+
+            <section>
+              <h2>Vision for the Future</h2>
+              <p>One of her greatest aspirations is to travel and experience the beauty of the world, particularly the wonders of nature. She envisions herself visiting historical landmarks, scenic destinations, and vibrant cities, learning from diverse cultures and gaining experiences that will enrich her life. For her, traveling represents a way to grow as an individual while taking a step closer to fulfilling her dreams of providing a better future for herself and her family. For Lgie, travel is more than just exploration—it is a journey of self-discovery and a way to deepen her appreciation for life.</p>
+            </section>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Article Section -->
+        <section id="article" class="section">  <header>
+        <h1>Plagiarism in the Philippines: Cases and Punishments</h1>
+    </header>
+
+    <section>
+        <h2>What is Plagiarism?</h2>
+        <p>Plagiarism is the act of using someone else's work, ideas, or intellectual property without proper acknowledgment or permission. This can include copying text, images, videos, or even code from the internet or other sources and presenting it as your own. Plagiarism is not only an ethical violation but also a legal offense in many countries, including the Philippines.</p>
+        
+        <h2>Notable Plagiarism Cases in the Philippines</h2>
+        <p>In the Philippines, plagiarism cases have drawn attention in both academic and professional fields. Here are some notable examples:</p>
+        <ul>
+            <li>
+                <strong>Case 1: Academic Plagiarism by a University Student</strong><br>
+                A university student was found to have copied several paragraphs from a research paper without citing the original source. The university administration imposed strict academic penalties, including suspension and a failing grade for the course involved.
+            </li>
+            <li>
+                <strong>Case 2: Plagiarism in Journalism</strong><br>
+                A well-known news outlet in the Philippines was accused of plagiarism when it was discovered that one of its reporters had copied large portions of articles from foreign sources without proper attribution. The reporter was terminated, and the news outlet issued an official apology.
+            </li>
+            <li>
+                <strong>Case 3: Plagiarism in the Philippine Government</strong><br>
+                A government official faced backlash when it was revealed that parts of their public speeches and policy proposals were copied from previous government documents and other external sources. The official was reprimanded, and public trust in their leadership was significantly damaged.
+            </li>
+        </ul>
+
+        <h2>Plagiarism Punishments in the Philippines</h2>
+        <p>Plagiarism is taken seriously in the Philippines and can result in various forms of punishment depending on the nature and scope of the offense. Here are some examples of how plagiarism is addressed:</p>
+        <ul>
+            <li><strong>Academic Consequences:</strong> In educational institutions, students who commit plagiarism can face severe academic penalties, including suspension, failing grades, and expulsion. Schools and universities are required to follow a code of academic integrity, and they may also implement mandatory seminars on plagiarism for students.</li>
+            <li><strong>Legal Consequences:</strong> Under the Philippine Copyright Law (Republic Act No. 8293), plagiarism can lead to civil or criminal liability. Those who plagiarize copyrighted works may face fines, imprisonment, or both if they violate intellectual property laws.</li>
+            <li><strong>Professional Consequences:</strong> In professional settings, plagiarism can lead to job termination, loss of credibility, and legal action. For example, journalists, authors, or content creators caught plagiarizing may be banned from working with certain companies or publishers.</li>
+        </ul>
+
+        <h2>Intellectual Property Laws in the Philippines</h2>
+        <p>The Philippines adheres to strict intellectual property (IP) laws, which protect creators' rights. The country's Copyright Law, the National Copyright Commission, and the Intellectual Property Office (IPO) play a key role in protecting creators from plagiarism and ensuring proper acknowledgment of original works. Those found guilty of plagiarism may be subject to penalties under these laws, which aim to promote creativity and protect intellectual property rights.</p>
+
+        <h2>Conclusion</h2>
+        <p>Plagiarism is a serious offense in the Philippines, with consequences ranging from academic penalties to legal repercussions. Whether in academia, journalism, or the government, it is crucial to give proper credit to the creators of original works and adhere to intellectual property laws. As we move further into the digital age, awareness and education about plagiarism and IP laws become more important in upholding the integrity of creative and academic endeavors.</p>
+    </section>
+         
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section">   <header>
+        <h1>Understanding Viruses, Malware, Spam, and Antiviruses</h1>
+    </header>
+
+    <section>
+        <h2>What are Computer Viruses?</h2>
+        <p>A computer virus is a type of malicious software (malware) designed to spread from one computer to another, often without the knowledge or consent of the user. Viruses can attach themselves to files or programs, and once the infected file is executed, the virus is activated and can cause harm to the system.</p>
+        <p>Common effects of viruses include slowing down the system, corrupting files, or even stealing sensitive information such as passwords. Some viruses are created simply to cause damage, while others may be used to collect data for cybercriminals.</p>
+    </section>
+
+    <section>
+        <h2>What is Malware?</h2>
+        <p>Malware, short for "malicious software," is any program or file that is harmful to a computer system. It includes viruses, but also encompasses a wide range of threats, such as worms, Trojan horses, ransomware, spyware, and adware.</p>
+        <p>Malware is designed to exploit vulnerabilities in a computer’s system to cause damage, steal information, or gain unauthorized access to resources. Some malware programs are designed to run in the background without the user’s knowledge, making them particularly dangerous.</p>
+        <ul>
+            <li><strong>Worms:</strong> Self-replicating malware that spreads through networks.</li>
+            <li><strong>Trojan Horses:</strong> Malware disguised as legitimate software.</li>
+            <li><strong>Ransomware:</strong> Malware that locks the user’s system and demands a ransom for unlocking it.</li>
+            <li><strong>Spyware:</strong> Software designed to collect information about a user without their knowledge.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>What is Spam?</h2>
+        <p>Spam refers to unsolicited or unwanted digital messages, often in the form of emails, text messages, or advertisements. These messages are usually sent in bulk to a large number of recipients, and they often contain irrelevant or harmful content, including ads for dubious products or links to malicious websites.</p>
+        <p>Spam can be both annoying and dangerous. It clutters inboxes, and some spam messages may contain malware, phishing attempts, or scams. Phishing emails, for example, are designed to trick users into providing sensitive information like usernames, passwords, or credit card details.</p>
+    </section>
+
+    <section>
+        <h2>How Antiviruses Protect Us</h2>
+        <p>Antivirus software is designed to detect, prevent, and remove viruses and other forms of malware from a computer system. It scans files and programs for signatures of known viruses, and it can also detect suspicious behaviors that might indicate the presence of an unknown malware strain.</p>
+        <p>Modern antivirus programs use a combination of methods to protect users, including:</p>
+        <ul>
+            <li><strong>Signature-based Detection:</strong> Identifies known threats by comparing files to a database of virus signatures.</li>
+            <li><strong>Heuristic-based Detection:</strong> Identifies new or unknown viruses by analyzing their behavior.</li>
+            <li><strong>Real-time Protection:</strong> Continuously scans files and programs in the background to detect malware before it can cause harm.</li>
+        </ul>
+        <p>Popular antivirus software includes brands like Norton, McAfee, Avast, and Kaspersky, which provide users with essential protection against digital threats.</p>
+    </section>
+
+    <section>
+        <h2>Best Practices for Avoiding Viruses, Malware, and Spam</h2>
+        <p>While antivirus software is essential, it's also important to practice good digital hygiene to minimize the risk of infection or unwanted spam. Here are some tips:</p>
+        <ul>
+            <li>Keep your operating system and software up to date with the latest security patches.</li>
+            <li>Avoid opening attachments or clicking on links in suspicious or unsolicited emails.</li>
+            <li>Install and update antivirus software regularly.</li>
+            <li>Be cautious when downloading files or software from the internet, especially from unknown sources.</li>
+            <li>Enable a firewall to protect your system from unauthorized access.</li>
+        </ul>
+    </section>
+
+          
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Lgie L. Doniña. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to show the selected section
+        function showSection(sectionId) {
+            let sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('visible');
+            });
+
+            // Show the selected section
+            let selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('visible');
+            }
+        }
+
+        // Initially, display the 'autobiography' section by default
+        showSection('autobiography');
+    </script>
+</body>
+</html>
